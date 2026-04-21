@@ -1,11 +1,12 @@
 body {
-    font-family: Arial;
+    font-family: 'Cairo', sans-serif;
 }
 
 /* TOPBAR */
 .topbar {
     background: #f5f5f5;
     padding: 10px;
+    font-size: 14px;
 }
 
 /* HEADER */
@@ -13,29 +14,110 @@ body {
     padding: 20px 0;
 }
 
-.header__menu {
+.logo {
+    width: 120px;
+}
+
+.menu {
     list-style: none;
-    gap: 20px;
+    gap: 30px;
+}
+
+.menu li {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu .active {
+    color: #7fad39;
+}
+
+/* ICONS */
+.icons i {
+    margin-right: 10px;
+    font-size: 18px;
 }
 
 /* SIDEBAR */
-.sidebar {
+.sidebar__title {
     background: #7fad39;
     color: white;
     padding: 15px;
+    font-weight: bold;
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
+    border: 1px solid #eee;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* SEARCH */
+.search {
+    gap: 10px;
+}
+
+.category {
+    background: #7fad39;
+    color: white;
+    padding: 10px;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px;
+}
+
+.search button {
+    background: #7fad39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.phone {
+    margin-left: 15px;
 }
 
 /* HERO */
 .hero {
     background: #f5f5f5;
-    padding: 30px;
+    padding: 40px;
+}
+
+.subtitle {
+    color: #7fad39;
+    font-weight: bold;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 45px;
+}
+
+.btn-shop {
+    background: #7fad39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.hero-img {
+    width: 350px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-top: 20px;
+    }
 }
