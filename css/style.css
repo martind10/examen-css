@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TOPBAR */
+.topbar {
+    background: #f8f9fa;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.topbar span {
+    margin-right: 20px;
+}
+
+.topbar a {
+    margin-left: 15px;
+    color: #555;
+    text-decoration: none;
+}
+
+/* HEADER */
+.header {
+    background: #3f6ccf;
+    color: white;
+    padding: 15px 0;
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.header__logo span {
+    color: #000;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__contact p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.header__contact span {
+    font-weight: bold;
+}
+
+/* NAV */
+.header {
+    background: #3f6ccf;
+    padding: 20px 0;
+}
+
+.nav__link {
+    margin-right: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav__link--active {
+    color: #3f6ccf;
+}
+
+.nav__social i {
+    margin-left: 15px;
+    color: #3f6ccf;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 90vh;
+
+   
+    background: url('../img/fondo.png') center/cover no-repeat;
+}
+
+.hero__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(63, 108, 207, 0.45); 
+}
+
+.hero__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero__title {
+    color: white;
+    font-size: 100px;
+}
+
+.hero__desc {
+    color: white;
+    font-size: 20px;
+}
+
+.hero__btn {
+    background: #3f6ccf;
+    padding: 12px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
