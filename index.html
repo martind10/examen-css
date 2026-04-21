@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Karen">
-    <meta name="keywords" content="ogani, tienda organica">
-    <meta name="description" content="Tienda organica OGANI">
+
+    <!-- SEO -->
+    <meta name="author" content="Tu Nombre">
+    <meta name="keywords" content="laboratorio, doctores, salud, medicina">
+    <meta name="description" content="Expert Doctors & Lab Assistants">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Labsky</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap (desde la web oficial) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Ogani</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -22,8 +30,17 @@
 <!-- TOPBAR -->
 <div class="topbar">
     <div class="container d-flex justify-content-between">
-        <span>hello@colorlib.com</span>
-        <span>Free Shipping for all Order of $99</span>
+        <div class="topbar__left">
+            <span><i class="fa fa-map-marker-alt"></i> 123 Street, New York, USA</span>
+            <span><i class="fa fa-clock"></i> Mon-Sat 09am-5pm</span>
+        </div>
+
+        <div class="topbar__right">
+            <a href="#">Career</a>
+            <a href="#">Support</a>
+            <a href="#">Terms</a>
+            <a href="#">FAQs</a>
+        </div>
     </div>
 </div>
 
@@ -31,83 +48,77 @@
 <header class="header">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <div class="header__logo">
-            <img src="img/logo.png" alt="logo">
+        <div class="header__contact">
+            <i class="fa fa-phone-alt"></i>
+            <div>
+                <p>Call Now</p>
+                <span>+012 345 6789</span>
+            </div>
         </div>
 
-        <nav class="header__menu">
-            <ul class="header__list d-flex">
-                <li class="header__item header__item--active">HOME</li>
-                <li class="header__item">SHOP</li>
-                <li class="header__item">PAGES</li>
-                <li class="header__item">BLOG</li>
-                <li class="header__item">CONTACT</li>
-            </ul>
-        </nav>
+        <h1 class="header__logo">Lab<span>sky</span></h1>
 
-        <div class="header__right">
-            <span>❤️</span>
-            <span>🛒</span>
-            <span>$150.00</span>
+        <div class="header__contact">
+            <i class="fa fa-envelope"></i>
+            <div>
+                <p>Mail Now</p>
+                <span>info@example.com</span>
+            </div>
         </div>
 
     </div>
 </header>
 
-<!-- MAIN -->
-<section class="main container mt-4">
-    <div class="row">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg nav">
+    <div class="container">
 
-        <!-- SIDEBAR -->
-        <div class="col-md-3">
-            <div class="sidebar">
-                <div class="sidebar__title">All departments</div>
-                <ul class="sidebar__list">
-                    <li>Fresh Meat</li>
-                    <li>Vegetables</li>
-                    <li>Fruit & Nut Gifts</li>
-                    <li>Fresh Berries</li>
-                    <li>Ocean Foods</li>
-                    <li>Butter & Eggs</li>
-                    <li>Fastfood</li>
-                    <li>Fresh Onion</li>
-                    <li>Papayaya & Crisps</li>
-                    <li>Oatmeal</li>
-                </ul>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+                <li><a class="nav__link nav__link--active" href="#">Home</a></li>
+                <li><a class="nav__link" href="#">About</a></li>
+                <li><a class="nav__link" href="#">Services</a></li>
+                <li><a class="nav__link" href="#">Pages</a></li>
+                <li><a class="nav__link" href="#">Contact</a></li>
+            </ul>
+
+            <div class="nav__social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-youtube"></i>
             </div>
-        </div>
-
-        <!-- CONTENT -->
-        <div class="col-md-9">
-
-            <!-- SEARCH -->
-            <div class="search d-flex align-items-center mb-3">
-                <div class="search__category">All Categories</div>
-                <input type="text" class="search__input" placeholder="What do you need?">
-                <button class="search__btn">SEARCH</button>
-                <div class="search__phone ms-3">📞 +65 11.188.888</div>
-            </div>
-
-            <!-- HERO -->
-            <div class="hero d-flex align-items-center justify-content-between">
-
-                <div class="hero__content">
-                    <span class="hero__subtitle">FRUIT FRESH</span>
-                    <h1 class="hero__title">Vegetable <br> 100% Organic</h1>
-                    <p class="hero__text">Free Pickup and Delivery Available</p>
-                    <button class="hero__btn">SHOP NOW</button>
-                </div>
-
-                <div class="hero__image">
-                    <img src="img/hero.jpg" alt="vegetables">
-                </div>
-
-            </div>
-
         </div>
 
     </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__container">
+        <div class="hero__content">
+
+            <h1 class="hero__title">
+                Expert Doctors <br> & <br> Lab Assistants
+            </h1>
+
+            <p class="hero__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+            <a href="#" class="hero__btn">Explore More</a>
+
+        </div>
+    </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
