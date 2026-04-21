@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+}
+
+/* TOPBAR */
+.topbar {
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+/* HEADER */
+.header {
+    padding: 20px 0;
+}
+
+.header__menu {
+    list-style: none;
+    gap: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #7fad39;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* HERO */
+.hero {
+    background: #f5f5f5;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
