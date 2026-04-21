@@ -1,123 +1,171 @@
+
+/* ===============================
+   RESET GENERAL
+================================= */
+
 body {
-    font-family: 'Cairo', sans-serif;
-}
-
-/* TOPBAR */
-.topbar {
-    background: #f5f5f5;
-    padding: 10px;
-    font-size: 14px;
-}
-
-/* HEADER */
-.header {
-    padding: 20px 0;
-}
-
-.logo {
-    width: 120px;
-}
-
-.menu {
-    list-style: none;
-    gap: 30px;
-}
-
-.menu li {
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.menu .active {
-    color: #7fad39;
-}
-
-/* ICONS */
-.icons i {
-    margin-right: 10px;
-    font-size: 18px;
-}
-
-/* SIDEBAR */
-.sidebar__title {
-    background: #7fad39;
-    color: white;
-    padding: 15px;
-    font-weight: bold;
-}
-
-.sidebar ul {
-    list-style: none;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
     padding: 0;
-    border: 1px solid #eee;
+    background-color: #ffffff;
 }
 
-.sidebar ul li {
-    padding: 10px;
+/* ===============================
+   TOPBAR
+================================= */
+
+.topbar {
+    background-color: #f5f5f5;
+    font-size: 14px;
+    padding: 8px 0;
+    color: #555;
+}
+
+.topbar__left span,
+.topbar__right span {
+    margin-right: 15px;
+}
+
+/* ===============================
+   HEADER
+================================= */
+
+.header {
     border-bottom: 1px solid #eee;
 }
 
-/* SEARCH */
-.search {
-    gap: 10px;
+.header__logo img {
+    max-height: 45px;
 }
 
-.category {
-    background: #7fad39;
-    color: white;
-    padding: 10px;
+.header__link {
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-.search input {
-    flex: 1;
-    padding: 10px;
+.header__link:hover {
+    color: #7fad39;
 }
 
-.search button {
-    background: #7fad39;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+.header__cart {
+    font-size: 14px;
 }
 
-.phone {
-    margin-left: 15px;
-}
-
-/* HERO */
-.hero {
-    background: #f5f5f5;
-    padding: 40px;
-}
-
-.subtitle {
+.header__phone {
     color: #7fad39;
     font-weight: bold;
+    margin: 0;
 }
 
-.hero h1 {
-    font-size: 45px;
+/* ===============================
+   SIDEBAR
+================================= */
+
+.sidebar {
+    background-color: #ffffff;
 }
 
-.btn-shop {
-    background: #7fad39;
-    color: white;
+.sidebar__title {
+    background-color: #7fad39;
+    color: #ffffff;
+    padding: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+.sidebar__item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.sidebar__item:hover {
+    background-color: #f5f5f5;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+
+.hero {
+    padding: 40px 0;
+}
+
+.hero__content {
+    background-color: #f5f5f5;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__text {
+    max-width: 50%;
+}
+
+.hero__subtitle {
+    color: #7fad39;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.hero__title {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.hero__description {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.hero__button {
+    background-color: #7fad39;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 30px;
     border: none;
-    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
-.hero-img {
-    width: 350px;
+.hero__button:hover {
+    background-color: #6c9e2f;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .hero {
+.hero__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 991px) {
+
+    .hero__content {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero-img {
-        margin-top: 20px;
+    .hero__text {
+        max-width: 100%;
+        margin-bottom: 30px;
     }
+
 }
